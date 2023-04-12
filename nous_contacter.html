@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>L'Étouffoir</title>
+    <link rel="stylesheet" href="./all_pages.css">
+    <link rel="stylesheet" href="./a_propos_de_nous.css">
+
+    <link rel="icon" href="./photo/L_Etouffoir.jpg" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>  
+  </head>
+<body>
+<id id = "header-menu">
+     
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='accueil.html'>Accueil</a></li>
+            <li><a href='liste_vin.html'>Tous nos Vins</a></li>
+            <li><a href='VinsROUGES.html'>Nos Rouges</a></li>
+            <li><a href='VinBLANCS.html'>Nos Blancs</a></li>
+            <li><a href='VinROSES.html'>Nos Roses</a></li>
+            <li><a href='nous_contacter.html'>A propos de nous</a></li>
+      </ul>
+    </nav>
+</id>
+<div class="block">
+  <img id="logo" src="photo/L_Etouffoir.jpg">
+</div>
+<div class = "presentation">
+    
+        <p>L'activité de notre entreprise est le commerce et la distribution de boissons. Nous souhaitons proposer aux consommateurs une gamme de produits fabriqués en <strong>France.</strong></p>
+       
+
+        <p>Les produits proposés seront dotés d'une image prenium ou bien éthique  <strong>(BIO, Nature, HVE, Demeter)</strong>. Nous proposerons une gamme de prix assez larges pour plaire à toutes les bourses, les clients apprécient les bonnes affaires à petits prix.
+        La majeure partie de notre offre sera haut de gamme car c'est l'image que nous souhaitons avoir.</p>
+        
+
+        <p>
+        Nous souhaitons pouvoir servir d'intermédiraire dans la distribution de BotB auprès de certaines enseignes de la restauration, les bars et la grande distribution en accord avec les producteurs.
+        </p>
+
+        <p>
+        Nous organiserons des évènements de dégustation dans les lieux  <strong>socio-culturels(bar,golf,etc), des séminaires, des cocktails</strong> le tout en réalisant de la vente physique. 
+        Le but étant d'enrichir notre clientèle ainsi que développer notre image de marque.
+        </p>
+
+    <p><em>La distribution passera par plusieurs canaux:</em></p>
+    
+
+    <p><strong>La vente physique en magasin.</strong></p>
+
+
+    <p><strong>La vente physique lors des évènements.</strong></p>
+
+
+    <p><strong>La distribution en BtoB.</strong></p>
+
+      
+    <p><em>Ce projet est né de l'envie d'entreprendre de 3 amis du lycée. Ces 3 amis ont une passion en commun, le vin et les spiritueux, c'est donc tout naturellement que leur envie de quitter le salariat et de proposer une gamme qualitative est née. L'objectif étant de mettre en valeur notre terroir Français et ainsi de proposer une offre différenciante.</em></p>
+  
+
+  <div class="contact">
+    <h2>Nous contacter:</h2>  
+    Courriel: nomrandom@gmail.com
+    <br>
+    Téléphone: 03-20-11-11-11
+    <br>
+  
+      <a  href="https://instagram.com" class="texte">Instagram: @Letouffoir_Off </a>
+        
+    <img src="photo/Instagram_icon.png.webp" class="insta">
+  </div>
+
+    
+  </p>
+</div>
+<script>
+  ScrollReveal().reveal('#logo',{
+    duration: 2500,
+    origin: 'top',
+    distance: '50px'});
+    ScrollReveal().reveal('.presentation',{
+    delay: 800,
+    duration: 2500,
+    origin: 'bottom',
+    distance: '50px'});
+    ScrollReveal().reveal('#header-menu',{
+    delay: 1600,
+    duration: 2500,
+    origin: 'top',
+    distance: '50px'}); 
+</script>
+</body>
+</html>

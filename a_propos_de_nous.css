@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    background-color: #fdebd0;
+    
+}
+
+
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Anybody;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-right: 100px;
+    margin-left: 100px;
+    
+
+}
+
+#logo{
+    width: 15%;
+    margin-bottom: 7px;
+   margin-top: -7px;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    margin-top: 25px;
+    font-size: 28px;
+    font-family:Oswald;
+}
+
+.insta{
+    width:35px;
+   margin-bottom: -10px;
+ 
+}
+.texte{
+    color:black;
+    text-decoration:none;
+    border:none;
+}
+
+.texte:hover{
+    color:rgb(109, 0, 109)
+}
+

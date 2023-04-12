@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+#big_box{
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+}
+
+.container {
+  grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 1em;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      justify-content: center;
+    }
+    .vin {
+        width: 80%;
+      }
+  }
+  
+
+#Title{
+  display: flex;
+  font-family: Anybody;
+  font-weight: 800;
+  font-size: 20px;
+  color:#333;
+  letter-spacing: 2px;
+  justify-content: center;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+
+#bottleVine{
+  transform: rotate(22deg);
+  width: 57px;
+  height: 58px;
+  color : #383534;
+  filter: brightness(0) saturate(100%) invert(16%) sepia(12%) saturate(17%) hue-rotate(10deg) brightness(94%) contrast(87%);;    
+  position: relative;
+  top:5px; 
+}
+
+.page_vin{ 
+  background: linear-gradient(-10deg, rgb(107, 0, 41), #83345048,rgb(253 255 104 / 57%));
+}
+
+h4{
+  align-self: center;
+  font-family: Anybody;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+p{
+  font-family: Anybody;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+.vin {
+  box-sizing: border-box;
+  padding: 25px;
+    display: flex;
+    margin: 40px;    
+    border-radius: 5px;
+    max-height: 500px;
+    max-width: 90%;
+    background-color: #ffffff69;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+
+.vin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5)
+  }
+
+.button{
+  position: fixed;
+  top: 280px;
+}
+
+.filter-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    margin: 0px 0px 30px 30px;
+    min-width: 118px;
+   
+
+    border: 1px solid gray;
+    background-color: #fdefd0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition:  all 0.3s ease,transform 0.2s ease-in-out, box-shadow 0.3s ease,width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);  
+}
+
+.filter-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-color:#fde4d0 ;
+  }
+
+
