@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    background-color: #fdebd0;
+    overflow-y: hidden;
+}
+
+h2{
+    font-family: Anybody;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.presentation{
+    display: flex;
+    margin: 0 50px;
+}
+
+#logo{
+    width: 20%;
+}
+
+.block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

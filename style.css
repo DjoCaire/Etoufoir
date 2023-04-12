@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100;200;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+}
+
+#container{
+    display : flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+}
+
+h1,h2,h3,h4,h5{
+    font-family:Anybody ;
+    text-align: center;
+    z-index: 0;
+}
+h1{
+    font-size: 45px;
+    margin: 0;
+    font-style: bold;
+    color:#383534;
+    font-weight: 800;
+}
+
+.accueil{
+    background-image: url("../cave-vin.jpg");
+    background-size: 2700px;
+    background-repeat: no-repeat;
+    background-color: grey;
+    backdrop-filter: blur(5px) contrast(80%) ;
+}
+.Title{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2px;    
+}
+
+#Title{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 15px;
+}
+
+.highlights{
+    height: 9px;
+    width: 510px;
+    position: absolute;
+    top: 144px;
+    opacity: 90%;
+    border-bottom : 2px solid transparent ;
+    transition : all 0.3s ease-in-out; 
+    
+}
+
+.highlights:hover{
+	padding-bottom : 5px;
+    border-bottom: 10px solid #9b2c21;
+}
+
+#bottleVine{
+    transform: rotate(22deg);
+    width: 57px;
+    height: 58px;
+    color : #383534;
+    filter:  saturate(100%) invert(18%)  hue-rotate(328deg)  contrast(77%);
+    position: relative;
+    top : -6px; 
+}
+.fullbox{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    max-width: 1100px;
+  
+}
+
+
+.vines{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px; 
+    padding-inline: 50px; 
+}
+.titlevines{
+    font-family: Oswald;
+    font-size:45px;
+    font-style:bold;
+    margin-bottom: 0;
+    color: #1c1b1b;
+}
+
+.titlevines.red{
+    color : #b4003f
+}
+#White{
+    color:rgb(192 194 93);
+}
+
+.titlevines.rose{
+    color : #c7577e
+}
+
+
+
+.textexplain{
+    font-style: medium;
+    color: #ffffff;
+    font-size:24px;
+    font-weight: 300;
+}
+.boutonlien{
+    align-self: center;
+}
+.boutonDecouvre{
+    background-color: orange;
+    min-width: 250px;
+    min-height: 80px;
+    border:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.boutonDecouvre:hover{
+    cursor:pointer
+}
+
+#header-menu{
+    padding-right: 10px;
+    display: flex;
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+    width: max-content;
+    width: auto;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    margin-bottom: 45px;
+
+}
+
+
+
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+    font-family: Anybody, cursive;
+    font-weight: 500;
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 60px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BF";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #CCADAD;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 60px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #BBB8B8;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #CACCCA;
+	color: #9E0E40;
+}
+
+
+#search-bar{
+    display: flex;
+    
+    position: relative;
+    width: 300px;
+    height: 37px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    font-size: 13px;
+  
+}
+
+#searchbar{
+    padding-left: 37px;
+    padding: 0;
+    padding-right: 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(34,34,34,.2);
+    width: 350px;
+    color: #333;
+    background-color : #f4f4f4; 
+    padding : 10px;
+    font-size: 13px;
+    height: 36px;
+    line-height: 17px;
+    margin-left: 16px;
+    margin-bottom : 2px;
+    margin-top: 2px;
+}
+
+.sbx-medium__submit{
+    position: absolute;
+    top: 0;
+    right: inherit;
+    left: 250px;
+    margin: 0;
+    border: 0;
+    border-radius: 18px 0 0 18px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0;
+    width: 37px;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: inherit;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  
+}
+
+.sbx-medium__submit svg {
+    width: 17px;
+    height: 17px;
+    vertical-align: middle;
+    fill: #666666;
+  }
+
+  .sbx-medium__submit:hover, .sbx-medium__submit:active {
+    cursor: pointer;
+  }
+  
+  .sbx-medium__submit:focus {
+    outline: 0;
+  }
+  
+.twoBox{
+    display: grid;
+    grid-template-columns: 0.5fr 6fr;
+}
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .container {
+      justify-content: center;
+    }
+    .vin {
+        width: 80%;
+      }
+  }
+  
+.page_vin{
+    background-color: #fdebd0;
+}
+.vin {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 2em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    max-height: 300px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  }
+  
+.photo_vin{
+    align-self: center;
+}
+
+.vin:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5)
+  }
+
+
+
+.filter-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 10px;
+    min-width: 125px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    background-color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition:  all 0.3s ease,transform 0.2s ease-in-out, box-shadow 0.3s ease;  
+}
+
+.filter-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5)
+  }
